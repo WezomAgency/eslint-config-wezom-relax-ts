@@ -10,8 +10,6 @@ module.exports = {
 	rules: {
 		'@typescript-eslint/camelcase': 0,
 		'@typescript-eslint/explicit-function-return-type': 0,
-		'@typescript-eslint/interface-name-prefix': [ 2, 'always' ],
-		'@typescript-eslint/generic-type-naming': [ 2, '^G([A-Z][a-zA-Z]*)?$' ],
 		'@typescript-eslint/no-empty-interface': 0,
 		'@typescript-eslint/no-explicit-any': 0,
 		'@typescript-eslint/no-var-requires': 0,
