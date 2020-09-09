@@ -4,9 +4,7 @@ module.exports = {
 		sourceType: 'module',
 		ecmaVersion: 2019
 	},
-	extends: [
-		'plugin:@typescript-eslint/recommended'
-	],
+	extends: ['plugin:@typescript-eslint/recommended'],
 	rules: {
 		'@typescript-eslint/camelcase': 0,
 		'@typescript-eslint/explicit-function-return-type': 0,
@@ -16,25 +14,22 @@ module.exports = {
 		'@typescript-eslint/no-unused-vars': [
 			2,
 			{
-				'vars': 'all',
-				'args': 'none',
-				'caughtErrors': 'all'
+				vars: 'all',
+				args: 'none',
+				caughtErrors: 'all'
 			}
 		],
-		'indent': [
-			'error',
+		indent: [
+			2,
 			'tab',
 			{
-				'SwitchCase': 1
+				SwitchCase: 1
 			}
 		],
 		'no-extra-boolean-cast': 0,
 		'no-sequences': 2,
 		'no-tabs': 0,
 		'no-unused-vars': 0,
-		'semi': [
-			'error',
-			'always'
-		]
+		semi: [2, 'always']
 	}
 };
