@@ -12,14 +12,44 @@ module.exports = {
 		'@typescript-eslint/naming-convention': [
 			2,
 			{
-				selector: 'memberLike',
-				format: ['camelCase']
-			},
-			{
-				selector: 'memberLike',
+				selector: 'property',
 				modifiers: ['private'],
 				format: ['camelCase'],
 				leadingUnderscore: 'require'
+			},
+			{
+				selector: 'parameterProperty',
+				format: ['camelCase']
+			},
+			{
+				selector: 'parameterProperty',
+				modifiers: ['private'],
+				format: ['camelCase'],
+				leadingUnderscore: 'require'
+			},
+			{
+				selector: 'method',
+				format: ['camelCase']
+			},
+			{
+				selector: 'method',
+				modifiers: ['private'],
+				format: ['camelCase'],
+				leadingUnderscore: 'require'
+			},
+			{
+				selector: 'accessor',
+				format: ['camelCase']
+			},
+			{
+				selector: 'accessor',
+				modifiers: ['private'],
+				format: ['camelCase'],
+				leadingUnderscore: 'require'
+			},
+			{
+				selector: 'enumMember',
+				format: ['PascalCase']
 			},
 			{
 				selector: 'variable',
@@ -27,42 +57,42 @@ module.exports = {
 			},
 			{
 				selector: 'function',
-				format: ['camelCase']
+				format: ['camelCase', 'PascalCase']
 			},
 			{
 				selector: 'parameter',
 				format: ['camelCase']
 			},
 			{
-				selector: 'typeParameter',
+				selector: 'class',
+				format: ['PascalCase']
+			},
+			{
+				selector: 'class',
+				modifiers: ['abstract'],
 				format: ['PascalCase'],
 				custom: {
-					regex: '^G[A-Z]',
+					regex: '^Abstract[A-Z]',
 					match: true
 				}
 			},
 			{
 				selector: 'interface',
 				format: ['PascalCase'],
-				custom: {
-					regex: '^I[A-Z]',
-					match: true
-				}
+				prefix: ['I']
 			},
 			{
 				selector: 'typeAlias',
 				format: ['PascalCase'],
-				custom: {
-					regex: '^T[A-Z]',
-					match: true
-				}
+				prefix: ['T']
+			},
+			{
+				selector: 'typeParameter',
+				format: ['PascalCase'],
+				prefix: ['G']
 			},
 			{
 				selector: 'enum',
-				format: ['PascalCase']
-			},
-			{
-				selector: 'enumMember',
 				format: ['PascalCase']
 			}
 		],
