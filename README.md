@@ -24,3 +24,8 @@ npm i -D eslint-config-wezom-relax-ts
 ```bash
 npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-flowtype eslint-plugin-import
 ```
+
+## Rules
+
+ESLint configuration and list of rules can be viewed in the source file [.eslintrc.js file](https://github.com/WezomAgency/eslint-config-wezom-relax-ts/blob/master/.eslintrc.js).  
+Detailed description each of rule see on [`@typescript-eslint/typescript-eslint` docs](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs).
