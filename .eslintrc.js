@@ -93,7 +93,11 @@ module.exports = {
 			},
 			{
 				selector: 'enum',
-				format: ['PascalCase']
+				format: ['PascalCase'],
+				custom: {
+					regex: '[a-z]List$',
+					match: true
+				}
 			}
 		],
 		'@typescript-eslint/no-empty-interface': 0,
