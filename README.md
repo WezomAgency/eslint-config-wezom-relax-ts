@@ -7,7 +7,7 @@
 
 > An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for Typescript
 
-## The package is in the Alpha version
+## The package is in the Beta version
 
 > __This package is not stable yet!__  
 > __So do not use it in production!__  
